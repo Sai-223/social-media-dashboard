@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <i class="fas fa-chart-line"></i>
+                <span>Home</span>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="index.html"><i class="fas fa-home"></i> Dashboard</a></li>
+                <li><a href="posts.html"><i class="fas fa-newspaper"></i> Posts</a></li>
+                <li><a href="messages.html"><i class="fas fa-envelope"></i> Messages</a></li>
+                <li><a href="analytics.html"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <header>
+                <h1>Dashboard</h1>
+                <div class="user-info">
+                    <img src="https://via.placeholder.com/40" alt="User Avatar" class="avatar">
+                    <span>SAIKUMAR</span>
+                </div>
+            </header>
+            <div class="dashboard-grid">
+                <div class="card followers">
+                    <i class="fas fa-users"></i>
+                    <h3>Followers</h3>
+                    <p class="number">10,234</p>
+                    <p class="change positive">+2.6%</p>
+                </div>
+                <div class="card likes">
+                    <i class="fas fa-heart"></i>
+                    <h3>Likes</h3>
+                    <p class="number">8,739</p>
+                    <p class="change positive">+1.4%</p>
+                </div>
+                <div class="card comments">
+                    <i class="fas fa-comment"></i>
+                    <h3>Comments</h3>
+                    <p class="number">1,829</p>
+                    <p class="change negative">-0.8%</p>
+                </div>
+                <div class="card shares">
+                    <i class="fas fa-share"></i>
+                    <h3>Shares</h3>
+                    <p class="number">972</p>
+                    <p class="change positive">+3.2%</p>
+                </div>
+            </div>
+            <div class="chart-container">
+                <h2>Engagement Overview</h2>
+                <canvas id="engagementChart"></canvas>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
